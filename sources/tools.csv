@@ -1,0 +1,82 @@
+name,kind,url,category,what_it_does,caveat
+IfcOpenShell,github,https://github.com/IfcOpenShell/IfcOpenShell,BIM and IFC,"IFC toolkit in C++ and Python, and the home of Bonsai, a Blender-based BIM authoring environment",Scripting knowledge helps a lot; the Blender interface is not a drafting package
+web-ifc,github,https://github.com/ThatOpen/engine_web-ifc,BIM and IFC,WebAssembly IFC parser for the browser: geometry and properties at full speed,Parsing only; you bring the interface and the workflows
+ThatOpen Components,github,https://github.com/ThatOpen/engine_components,BIM and IFC,"Web components for viewing, measuring and coordinating IFC models in a browser",The successor to IFC.js and still moving; pin your versions
+xBim Essentials,github,https://github.com/xBimTeam/XbimEssentials,BIM and IFC,".NET toolkit for reading, writing and querying IFC",The .NET option; smaller community than IfcOpenShell
+xBim Windows UI,github,https://github.com/xBimTeam/XbimWindowsUI,BIM and IFC,"Windows desktop IFC viewer, validation and model tools",Desktop .NET heritage; check the release cadence before depending on it
+xBim WebUI,github,https://github.com/xBimTeam/XbimWebUI,BIM and IFC,Web-based IFC model viewer from the xBim project,Viewer only; lighter maintenance than the desktop stack
+BIMserver,github,https://github.com/opensourceBIM/BIMserver,BIM and IFC,Self-hosted IFC model server with revision control and notifications,"Java, heavyweight, and the operational effort is real"
+BIMsurfer,github,https://github.com/opensourceBIM/BIMsurfer,BIM and IFC,Browser-based IFC viewer used by BIMserver,"A viewer, not a coordination or clash tool"
+Bldrs Share,github,https://github.com/bldrs-ai/Share,BIM and IFC,"Browser IFC review and collaboration, with links you can share",Young project; validate against your own models first
+Speckle,github,https://github.com/specklesystems/speckle-server,BIM and IFC,Open data platform that moves geometry and data between AEC tools,Server to run; check the licence for commercial hosting
+LibreCAD,github,https://github.com/LibreCAD/LibreCAD,CAD and drawing,2D CAD for drawing production,"2D only, and DWG support is weaker than DXF: convert first"
+QCAD,github,https://github.com/qcad/qcad,CAD and drawing,2D CAD with a mature DXF/DWG engine,Community edition is GPL; some features are paid editions
+ezdxf,github,https://github.com/mozman/ezdxf,CAD and drawing,"Python library to read, write and automate DXF drawings","A library, not a CAD interface; excellent for drawing QA scripts"
+FreeCAD,github,https://github.com/FreeCAD/FreeCAD,CAD and drawing,"Parametric 3D CAD with BIM, FEM and drawing workbenches",Real learning curve; a modelling tool rather than a construction platform
+pdf.js,github,https://github.com/mozilla/pdf.js,CAD and drawing,PDF rendering in the browser; the base layer of most web drawing viewers,"Rendering and forms, not measurement or markup workflows"
+PyMuPDF,github,https://github.com/pymupdf/PyMuPDF,CAD and drawing,"Fast PDF parsing, text extraction and manipulation in Python",AGPL for the free tier: check before embedding in a product
+pdfplumber,github,https://github.com/jsvine/pdfplumber,CAD and drawing,"Extracts text, tables and coordinates from PDFs",Text-based PDFs only; scanned sets need OCR first
+Camelot,github,https://github.com/atlanhq/camelot,CAD and drawing,Pulls tables out of PDFs into dataframes,Merged cells and borderless tables defeat it
+Stirling PDF,github,https://github.com/Stirling-Tools/Stirling-PDF,CAD and drawing,"Self-hosted PDF toolbox: merge, split, stamp, OCR, redact, compress",General purpose; it knows nothing about sheets and revisions
+Tesseract,github,https://github.com/tesseract-ocr/tesseract,CAD and drawing,The OCR engine behind most document digitisation,"Accuracy collapses on stamped, folded, hand-annotated drawings"
+PaddleOCR,github,https://github.com/PaddlePaddle/PaddleOCR,CAD and drawing,OCR with strong layout and table understanding,Model downloads and GPU expectations; keep documents in-house
+Paperless-ngx,github,https://github.com/paperless-ngx/paperless-ngx,Documents and records,"Scans, indexes and archives documents with tags and full-text search","An archive, not an EDMS: no transmittals, revisions or approval workflow"
+Mayan EDMS,github,https://github.com/mayan-edms/mayan-edms,Documents and records,"Document management with metadata, versioning and workflow",Setup effort is high and the interface shows its age
+BookStack,github,https://github.com/BookStackApp/BookStack,Documents and records,Wiki-style knowledge base for procedures and O&M documentation,Uncontrolled documentation: not a substitute for a document control system
+OpenProject,github,https://github.com/opf/openproject,Scheduling and planning,"Project management with Gantt charts, work packages, budgets and costs",Not a CPM engine: no float analysis or claim-grade schedule reporting
+GanttProject,github,https://github.com/bardsoftware/ganttproject,Scheduling and planning,Desktop Gantt charting and critical path scheduling,Basic resource handling; not scaled to multi-job construction programmes
+TaskJuggler,github,https://github.com/taskjuggler/TaskJuggler,Scheduling and planning,Text-based project planning with real resource levelling,Batch and syntax-heavy; you edit a plan file rather than a chart
+OR-Tools,github,https://github.com/google/or-tools,Scheduling and planning,"Google's optimisation toolkit, including CP-SAT for scheduling and sequencing",You supply the model; it is not a scheduling application
+ODK Central,github,https://github.com/getodk/central,Field data collection,"Self-hosted server for mobile field forms, submissions and exports",Not construction-aware: you design the forms and the workflow
+ODK Collect,github,https://github.com/getodk/collect,Field data collection,Android client for filling in ODK forms offline and syncing later,Android only; iOS needs a replacement in the field
+KoboToolbox,github,https://github.com/kobotoolbox/kpi,Field data collection,Form builder and data collection platform with a mature offline story,The hosted service is the easy path; self-hosting is real work
+OpenDroneMap,github,https://github.com/OpenDroneMap/ODM,Reality capture and survey,"Turns drone imagery into maps, point clouds and 3D models",Needs good overlap and ground control; outputs still need QA against survey
+COLMAP,github,https://github.com/colmap/colmap,Reality capture and survey,Structure-from-motion and multi-view stereo photogrammetry,Research-grade interface; command line heavy
+Meshroom,github,https://github.com/alicevision/Meshroom,Reality capture and survey,Photogrammetry with a node-based graphical interface,"GPU hungry, and photogrammetry is not measurement-grade surveying"
+CloudCompare,github,https://github.com/CloudCompare/CloudCompare,Reality capture and survey,"Inspect, compare, measure and clean point clouds and meshes",Desktop tool with no project database or audit trail
+Open3D,github,https://github.com/isl-org/Open3D,Reality capture and survey,"Point cloud, mesh and registration algorithms in Python and C++","A library, not an application; you build the workflow"
+PDAL,github,https://github.com/PDAL/PDAL,Reality capture and survey,Point cloud data abstraction with pipeline processing,Format and pipeline plumbing rather than end user tooling
+Potree,github,https://github.com/potree/potree,Reality capture and survey,Web viewer for very large point clouds,Display and navigation only
+laspy,github,https://github.com/laspy/laspy,Reality capture and survey,Read and write LAS and LAZ point cloud files in Python,File format plumbing; pair it with something that analyses
+QGIS,github,https://github.com/qgis/QGIS,GIS and site,"Desktop GIS used for site mapping, earthwork volumetrics and utility records",Not CAD: plan production and sheet setup are limited
+GDAL,github,https://github.com/OSGeo/gdal,GIS and site,The geospatial translation and processing library under almost everything else,Command line and API only; unglamorous and everywhere
+GeoServer,github,https://github.com/geoserver/geoserver,GIS and site,Serves map layers over OGC web services to browsers and apps,Java stack with real operational overhead
+pyproj,github,https://github.com/pyproj4/pyproj,GIS and site,Coordinate reference system transformations in Python,"Choosing the wrong CRS is still your problem, silently"
+WhiteboxTools,github,https://github.com/jblindsay/whitebox-tools,GIS and site,"Terrain, hydrology and raster analysis for earthwork and drainage",Terrain analysis focus; not a survey adjustment tool
+COMPAS,github,https://github.com/compas-dev/compas,Structural and analysis,"Computational framework for structural geometry, analysis and fabrication","Python, research-flavoured, and its own learning curve"
+sectionproperties,github,https://github.com/robbievanleeuwen/section-properties,Structural and analysis,"Cross-section properties, stress and capacity calculations","Sections only, not whole-structure behaviour"
+PyNite,github,https://github.com/JWock82/PyNite,Structural and analysis,3D frame finite element analysis in Python,Frame elements; it is not a design code checker
+anaStruct,github,https://github.com/ritchie46/anaStruct,Structural and analysis,2D frame and truss analysis with plotting,Two dimensions only; teaching to practice grade
+OpenSees,github,https://github.com/OpenSees/OpenSees,Structural and analysis,"Nonlinear structural analysis, widely used in earthquake engineering",Research-grade complexity and steeper than a frame tool
+OpenSeesPy,github,https://github.com/zhuminjie/OpenSeesPy,Structural and analysis,Python interface to OpenSees for scripting analyses,The packaging and docs repository for OpenSeesPy; same complexity as OpenSees
+EnergyPlus,github,https://github.com/NREL/EnergyPlus,Energy MEP and sustainability,"Whole-building energy simulation, the reference engine in the field","Input files are unforgiving; garbage in, garbage out at scale"
+OpenStudio,github,https://github.com/NREL/OpenStudio,Energy MEP and sustainability,SDK and tooling around EnergyPlus for modelling workflows,"Version drift between SDK, GUIs and measures is a known pain"
+Radiance,github,https://github.com/LBNL-ETA/Radiance,Energy MEP and sustainability,Daylight and lighting simulation,Decades-old interface; script it or use it through Honeybee
+Ladybug,github,https://github.com/ladybug-tools/ladybug,Energy MEP and sustainability,"Climate, sun, wind and comfort analysis from weather data",Grasshopper-centric in practice
+Honeybee,github,https://github.com/ladybug-tools/honeybee,Energy MEP and sustainability,Daylight and energy modelling built on Radiance and EnergyPlus,Needs Grasshopper or Python skill; not a design tool by itself
+CoolProp,github,https://github.com/CoolProp/CoolProp,Energy MEP and sustainability,Thermophysical property database for HVAC and refrigeration calculation,A library; the engineering judgement stays with you
+OpenFOAM,github,https://github.com/OpenFOAM/OpenFOAM-dev,Energy MEP and sustainability,"CFD for wind, smoke, ventilation and airflow studies","Specialist tooling: meshing, not modelling, is the hard part"
+openLCA,link,https://www.openlca.org/,Energy MEP and sustainability,"Life cycle assessment software, open source but distributed outside GitHub","Result quality depends on the database you licence, not on the software"
+Brightway,github,https://github.com/brightway-lca/brightway25,Energy MEP and sustainability,Python framework for life cycle assessment (Brightway 2.5),Version churn is real: 2.5 and 2.x are not interchangeable
+eemeter,github,https://github.com/openeemeter/eemeter,Energy MEP and sustainability,Normalises meter data into energy savings figures,Aimed at utility programme evaluation rather than site work
+ERPNext,github,https://github.com/frappe/erpnext,Cost accounting and ERP,"Open ERP with projects, timesheets, purchasing and accounting","Not construction-native: no AIA billing, WIP schedule or retainage without customisation"
+Odoo,github,https://github.com/odoo/odoo,Cost accounting and ERP,"ERP with project, timesheet and analytic accounting",Community edition has no construction apps; licensing differs between editions
+Tryton,github,https://github.com/tryton/tryton,Cost accounting and ERP,"Modular ERP with accounting, projects and timesheets",You build the construction layer yourself
+Dolibarr,github,https://github.com/Dolibarr/dolibarr,Cost accounting and ERP,"ERP and CRM for small organisations, with invoicing and projects",Job costing is thin for construction
+GnuCash,github,https://github.com/Gnucash/gnucash,Cost accounting and ERP,Double-entry accounting for small businesses,No job costing at construction scale; fine for a tiny outfit only
+Plane,github,https://github.com/makeplane/plane,Collaboration and PM,Issue and project tracking with cycles and modules,Generic project tooling; no construction workflow built in
+Vikunja,github,https://github.com/go-vikunja/vikunja,Collaboration and PM,Self-hosted task and project lists,Lightweight by design; no scheduling or costing
+Nextcloud,github,https://github.com/nextcloud/server,Collaboration and PM,"Self-hosted file sharing, document collaboration and office integration","File sharing, not document control: no transmittals or revisions"
+Outline,github,https://github.com/outline/outline,Collaboration and PM,Team knowledge base for procedures and standards,A wiki; discipline still decides whether it stays current
+Zulip,github,https://github.com/zulip/zulip,Collaboration and PM,"Threaded team chat, which suits project discussions better than channels",Operational effort to host; adoption is the real risk
+Mattermost,github,https://github.com/mattermost/mattermost,Collaboration and PM,Self-hosted team chat with file sharing and integrations,"Ops burden, and the mobile app matters on site"
+ROS 2,github,https://github.com/ros2/ros2,Automation robotics and fabrication,"Robot middleware: perception, navigation and control architecture","Robotics engineering, not construction work; the field is hard"
+Navigation2,github,https://github.com/ros-navigation/navigation2,Automation robotics and fabrication,Navigation and path planning stack for mobile robots,Assumes a known map and an engineered environment
+LinuxCNC,github,https://github.com/LinuxCNC/linuxcnc,Automation robotics and fabrication,Machine control for CNC fabrication equipment,Shop fabrication rather than site work
+grbl,github,https://github.com/gnea/grbl,Automation robotics and fabrication,Motion control firmware for CNC machines,Firmware for hobby and small machines
+Universal Gcode Sender,github,https://github.com/winder/Universal-G-Code-Sender,Automation robotics and fabrication,Sends G-code to CNC controllers,Shop tooling; not a production control system
+OctoPrint,github,https://github.com/OctoPrint/OctoPrint,Automation robotics and fabrication,Web control for 3D printers,Prototyping and small-scale fabrication
+Ultralytics YOLO,github,https://github.com/ultralytics/ultralytics,Machine learning and datasets,Object detection and segmentation; the usual starting point for PPE and progress detection,You must train on your own site imagery; published models do not transfer for free
+Detectron2,github,https://github.com/facebookresearch/detectron2,Machine learning and datasets,Detection and segmentation toolkit from Meta AI,Research maintenance cadence; expect to pin versions
+Segment Anything,github,https://github.com/facebookresearch/segment-anything,Machine learning and datasets,Promptable image segmentation,Check the weights licence for commercial use before building on it
+RoadDamageDetector,github,https://github.com/sekilab/RoadDamageDetector,Machine learning and datasets,Road damage image dataset and detection baselines,"One country's roads: treat it as a benchmark, not a trained model for your site"
