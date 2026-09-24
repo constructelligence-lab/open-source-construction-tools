@@ -268,3 +268,8 @@ Add a row to `sources/tools.csv` and run the refresh. Rules:
 
 The list itself is CC BY 4.0 — use it, adapt it, credit it. The projects listed keep their own licences, which
 are shown per row and belong to their authors.
+
+---
+
+*Maintained by [Constructelligence](https://constructelligence.co) — construction cost intelligence for
+contractors.*

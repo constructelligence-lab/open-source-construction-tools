@@ -1,0 +1,20 @@
+# Licence
+
+Copyright (c) 2026 Constructelligence (constructelligence.co).
+
+The list itself — the curation, notes, caveats and structure in this repository — is licensed under the
+Creative Commons Attribution 4.0 International licence (CC BY 4.0):
+https://creativecommons.org/licenses/by/4.0/
+
+You may use, adapt and redistribute it, including commercially, provided you give appropriate credit, link
+to the licence, and indicate if changes were made.
+
+## Third-party material
+
+Every project listed keeps its own licence, shown per row in the index, and belongs to its authors. This
+repository claims no rights over that software, and inclusion is not an endorsement or a warranty of fitness.
+
+## No warranty
+
+Provided "as is", without warranty of any kind. Metadata is read from the GitHub API at refresh time and can
+change; verify anything before you depend on it.
