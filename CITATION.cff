@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: If you use or adapt this work, please cite it as below.
+type: software
+title: "Open source construction tools"
+abstract: "Open source software for construction, verified against the GitHub API: licence, language, last commit and an honest caveat per entry."
+authors:
+  - name: Constructelligence
+    website: https://constructelligence.co
+repository-code: https://github.com/constructelligence-lab/open-source-construction-tools
+url: https://constructelligence.co
+license: CC-BY-4.0
+date-released: 2026-09-24
+keywords:
+  - "construction"
+  - "AEC"
+  - "BIM"
+  - "IFC"
+  - "open source"
+  - "curated list"

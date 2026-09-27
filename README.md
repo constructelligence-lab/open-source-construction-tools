@@ -257,17 +257,28 @@ Add a row to `sources/tools.csv` and run the refresh. Rules:
 - **Construction relevance**, not general software: a task tracker qualifies only if you can point at the
   construction workflow it serves.
 
-## Related
-
-- [`constructelligence-lab/construction-data`](https://github.com/constructelligence-lab/construction-data) —
-  general construction reference data: cost codes, units, waste factors, glossary, metric formulas.
-- [`constructelligence-lab/ai-in-construction`](https://github.com/constructelligence-lab/ai-in-construction) —
-  a practical guide to AI in construction: what works, what your data has to look like, and a 90-day plan.
 
 ## Licence
 
 The list itself is CC BY 4.0 — use it, adapt it, credit it. The projects listed keep their own licences, which
 are shown per row and belong to their authors.
+
+<!-- begin:family -->
+## More from Constructelligence
+
+Open construction resources from the same team, all maintained alongside this one:
+
+| Repository | What it is |
+| --- | --- |
+| [AI in construction](https://github.com/constructelligence-lab/ai-in-construction) | A practical guide to AI in construction: what works today, what the data has to look like, the risks, and a 90-day plan. |
+| [Construction data migration](https://github.com/constructelligence-lab/construction-data-migration) | A guide and toolkit for moving a contractor between systems, and proving nothing was lost. |
+| [Construction project records](https://github.com/constructelligence-lab/construction-project-records) | Open schemas, templates and a checker for RFIs, submittals, change events, daily reports and punch lists. |
+| [Construction reference data](https://github.com/constructelligence-lab/construction-data) | Cost codes, units, waste factors, pay units, trade sequence, glossary and metric formulas in CSV. |
+| [Construction reference MCP server](https://github.com/constructelligence-lab/construction-mcp) | An offline MCP server that gives AI assistants construction reference data and calculators. |
+| [Construction prompts](https://github.com/constructelligence-lab/construction-prompts) | 28 prompts for ChatGPT, Claude and Gemini, from bid go/no-go to notice letters. |
+| [Construction agent skills](https://github.com/constructelligence-lab/construction-agent-skills) | 28 installable agent skills for Claude Code and any agent that reads SKILL.md. |
+
+<!-- end:family -->
 
 ---
 
