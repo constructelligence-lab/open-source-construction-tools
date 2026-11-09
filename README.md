@@ -8,6 +8,13 @@ narrower on purpose: every project here has been checked against the GitHub API 
 last commit and archived status, so you can see at a glance whether you are looking at something maintained
 or something abandoned in 2019.
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/tools-map-dark.svg">
+    <img src="assets/tools-map-light.svg" alt="Open source construction tools by category: 105 projects across 13 categories, with a breakdown of their licences" width="100%">
+  </picture>
+</p>
+
 ## How to read this list
 
 - **Licence and activity are read from the API, not typed by hand.** Both matter more than star counts. A
@@ -23,7 +30,7 @@ or something abandoned in 2019.
   and your own contracts.
 
 <!-- begin:index -->
-*95 projects checked against the GitHub API on 2026-11-09. Licence, language, last commit and archived status are read from the API, not typed by hand.*
+*105 projects checked against the GitHub API on 2026-11-09. Licence, language, last commit and archived status are read from the API, not typed by hand.*
 
 ### BIM and IFC
 
@@ -31,6 +38,7 @@ Model authoring, IFC parsing and model servers. The strongest open source area i
 
 | Project | What it does in a construction workflow | Caveat | Licence | Language | Last commit |
 | --- | --- | --- | --- | --- | --- |
+| [Pascal Editor](https://github.com/pascalorg/editor) | Browser-based 3D architecture editor with scan-to-BIM, an MCP server and a CLI | Created October 2025 and fast-moving: a modelling editor, not a coordination or issue-tracking tool | MIT | TypeScript | 2026-11-09 |
 | [IfcOpenShell](https://github.com/IfcOpenShell/IfcOpenShell) | IFC toolkit in C++ and Python, and the home of Bonsai, a Blender-based BIM authoring environment | Scripting knowledge helps a lot; the Blender interface is not a drafting package | LGPL-3.0 | C++ | 2026-11-09 |
 | [Dynamo](https://github.com/DynamoDS/Dynamo) | Visual programming for computational design and automation, widely used to script Revit | Most useful alongside Revit, which is not open source; big graphs are hard to review and version | Apache-2.0 | HTML | 2026-11-09 |
 | [pyRevit](https://github.com/pyrevitlabs/pyRevit) | Rapid application development environment for Autodesk Revit: write Python tools and add them to the ribbon | Needs Revit; GPL-3.0 carries obligations if you distribute something built on it | GPL-3.0 | Python | 2026-11-09 |
@@ -41,14 +49,17 @@ Model authoring, IFC parsing and model servers. The strongest open source area i
 | [iTwin.js](https://github.com/iTwin/itwinjs-core) | Libraries for building viewers and apps on infrastructure digital twins (iModels) | A large framework with its own data model, led by Bentley; expect a learning curve | MIT | TypeScript | 2026-11-09 |
 | [ThatOpen Components](https://github.com/ThatOpen/engine_components) | Web components for viewing, measuring and coordinating IFC models in a browser | The successor to IFC.js and still moving; pin your versions | MIT | TypeScript | 2026-11-08 |
 | [xBim Essentials](https://github.com/xBimTeam/XbimEssentials) | .NET toolkit for reading, writing and querying IFC | The .NET option; smaller community than IfcOpenShell | custom | C# | 2026-08-28 |
+| [DDC cad2data converters](https://github.com/datadrivenconstruction/cad2data-Revit-IFC-DWG) | Converts Revit, IFC and DWG files to open data formats offline, without a CAD licence | Only the workflows and docs are MIT; the converters themselves are under a non-commercial EULA, so commercial use needs the authors' licence | custom | Python | 2026-11-09 |
 | [Revit MCP (mcp-servers-for-revit)](https://github.com/mcp-servers-for-revit/revit-mcp) *(archived)* | MCP server that lets AI clients such as Claude read, create, modify and delete elements in Revit | Needs Revit, and its tools can change the model: try it on a copy | MIT | TypeScript | 2026-02-25 |
+| [ifc-lite](https://github.com/LTplus-AG/ifc-lite) | Browser-first WebGPU IFC viewer with a TypeScript SDK, CLI and MCP server | Created January 2026; MPL-2.0 requires changes to its own files to be shared | MPL-2.0 | TypeScript | 2026-11-09 |
 | [BIMsurfer](https://github.com/opensourceBIM/BIMsurfer) | Browser-based IFC viewer used by BIMserver | A viewer, not a coordination or clash tool | MIT | JavaScript | 2025-12-30 |
+| [Hypar Elements](https://github.com/hypar-io/Elements) | Code-first C# library for building models and exporting them as glTF | A library for developers; Hypar's hosted platform is a separate commercial product | MIT | C# | 2026-11-07 |
 | [buildingSMART IDS](https://github.com/buildingSMART/IDS) | The Information Delivery Specification: a machine-readable way to say what data a BIM model must contain | A specification and test material, not an application; check your authoring software supports it | custom | C# | 2026-09-25 |
 | [xBim Windows UI](https://github.com/xBimTeam/XbimWindowsUI) | Windows desktop IFC viewer, validation and model tools | Desktop .NET heritage; check the release cadence before depending on it | custom | C# | 2026-08-24 |
 | [BHoM](https://github.com/BHoM/BHoM) | Object model and toolkits for moving data between engineering and design software | C# based; its value depends on which software adapters you need and whether they are maintained | LGPL-3.0 | C# | 2026-11-03 |
 | [xBim WebUI](https://github.com/xBimTeam/XbimWebUI) | Web-based IFC model viewer from the xBim project | Viewer only; lighter maintenance than the desktop stack | custom | TypeScript | 2026-10-24 |
 | [Bldrs Share](https://github.com/bldrs-ai/Share) | Browser IFC review and collaboration, with links you can share | Young project; validate against your own models first | AGPL-3.0 | JavaScript | 2026-11-09 |
-| [revit-mcp (Constructelligence)](https://github.com/constructelligence-lab/revit-mcp) | MCP server for Revit that is read-only by default, with photoreal renders through Blender and PDF, IFC and glTF export | Needs Revit; maintained by the authors of this list, and its add-in has not yet been run against a live Revit by them | custom | JavaScript | 2026-11-09 |
+| [revit-mcp (Constructelligence)](https://github.com/constructelligence-lab/revit-mcp) | MCP server for Revit that is read-only by default, with photoreal renders through Blender and PDF, IFC and glTF export | Needs Revit; maintained by the authors of this list, and its add-in has not yet been run against a live Revit by them | MIT | JavaScript | 2026-11-09 |
 
 ### CAD and drawing
 
@@ -78,6 +89,7 @@ Document management and archives, one step removed from proper EDMS.
 | [Paperless-ngx](https://github.com/paperless-ngx/paperless-ngx) | Scans, indexes and archives documents with tags and full-text search | An archive, not an EDMS: no transmittals, revisions or approval workflow | GPL-3.0 | Python | 2026-11-09 |
 | [BookStack](https://github.com/BookStackApp/BookStack) | Wiki-style knowledge base for procedures and O&M documentation | Uncontrolled documentation: not a substitute for a document control system | MIT | PHP | 2026-11-09 |
 | [DocuSeal](https://github.com/docusealco/docuseal) | Self-hosted document signing and form filling | AGPL-3.0; e-signing is not document control, and legal acceptance of e-signatures varies by contract and country | AGPL-3.0 | Ruby | 2026-11-09 |
+| [open-pdf-studio](https://github.com/OpenAEC-Foundation/open-pdf-studio) | PDF viewer and editor with its own Rust engine | Created January 2026; a viewer and markup tool, not a quantity take-off package | LGPL-3.0 | HTML | 2026-11-09 |
 | [Mayan EDMS](https://github.com/mayan-edms/mayan-edms) | Document management with metadata, versioning and workflow | Setup effort is high and the interface shows its age | custom | Python | 2026-05-23 |
 
 ### Scheduling and planning
@@ -111,11 +123,14 @@ Photogrammetry, point clouds and the libraries that process them.
 | [Open3D](https://github.com/isl-org/Open3D) | Point cloud, mesh and registration algorithms in Python and C++ | A library, not an application; you build the workflow | custom | C++ | 2026-11-05 |
 | [COLMAP](https://github.com/colmap/colmap) | Structure-from-motion and multi-view stereo photogrammetry | Research-grade interface; command line heavy | custom | C++ | 2026-11-09 |
 | [Meshroom](https://github.com/alicevision/Meshroom) | Photogrammetry with a node-based graphical interface | GPU hungry, and photogrammetry is not measurement-grade surveying | custom | Python | 2026-11-09 |
+| [OpenMVG](https://github.com/openMVG/openMVG) | C++ library for multiple view geometry and structure from motion | A library for developers and researchers, not an end-user application | MPL-2.0 | C++ | 2026-11-07 |
 | [OpenDroneMap](https://github.com/OpenDroneMap/ODM) | Turns drone imagery into maps, point clouds and 3D models | Needs good overlap and ground control; outputs still need QA against survey | AGPL-3.0 | Python | 2026-10-29 |
 | [Potree](https://github.com/potree/potree) | Web viewer for very large point clouds | Display and navigation only | custom | JavaScript | 2026-01-08 |
 | [CloudCompare](https://github.com/CloudCompare/CloudCompare) | Inspect, compare, measure and clean point clouds and meshes | Desktop tool with no project database or audit trail | custom | C++ | 2026-11-08 |
+| [WebODM](https://github.com/WebODM/WebODM) | Web interface for OpenDroneMap: process drone imagery into maps, point clouds and 3D models | AGPL-3.0, so a hosted service has obligations; processing needs a capable machine | AGPL-3.0 | Python | 2026-11-09 |
 | [OpenSfM](https://github.com/mapillary/OpenSfM) | Structure-from-motion pipeline that turns overlapping photos into 3D reconstructions | A library for Python users with no GUI; OpenDroneMap packages it for most site teams | BSD-2-Clause | Python | 2026-11-02 |
 | [PDAL](https://github.com/PDAL/PDAL) | Point cloud data abstraction with pipeline processing | Format and pipeline plumbing rather than end user tooling | custom | C++ | 2026-11-09 |
+| [OpenReality](https://github.com/reality-opened/openreality) | Turns phone video into 3D scenes an AI client can query, with MCP tools | Created September 2026, so very new: check maturity before relying on it | BSD-2-Clause | Python | 2026-10-30 |
 | [laspy](https://github.com/laspy/laspy) | Read and write LAS and LAZ point cloud files in Python | File format plumbing; pair it with something that analyses | custom | Python | 2026-05-30 |
 
 ### GIS and site
@@ -170,6 +185,7 @@ Detection and segmentation tooling, and the datasets that come with it.
 | [Segment Anything](https://github.com/facebookresearch/segment-anything) | Promptable image segmentation | Check the weights licence for commercial use before building on it | Apache-2.0 | Jupyter Notebook | 2024-09-18 |
 | [Detectron2](https://github.com/facebookresearch/detectron2) | Detection and segmentation toolkit from Meta AI | Research maintenance cadence; expect to pin versions | Apache-2.0 | Python | 2026-10-27 |
 | [RoadDamageDetector](https://github.com/sekilab/RoadDamageDetector) | Road damage image dataset and detection baselines | One country's roads: treat it as a benchmark, not a trained model for your site | MIT | Jupyter Notebook | 2025-10-23 |
+| [DDC Skills for AI Agents](https://github.com/datadrivenconstruction/DDC_Skills_for_AI_Agents_in_Construction) | A large collection of AI agent skills for construction tasks such as BIM analysis, estimating and scheduling | Created January 2026; read each skill before relying on its numbers or rules | MIT | Python | 2026-10-19 |
 
 ### Cost accounting and ERP
 
@@ -182,6 +198,7 @@ General ERPs you can shape into job costing, and accounting basics.
 | [Dolibarr](https://github.com/Dolibarr/dolibarr) | ERP and CRM for small organisations, with invoicing and projects | Job costing is thin for construction | GPL-3.0 | PHP | 2026-11-09 |
 | [InvenTree](https://github.com/inventree/InvenTree) | Inventory management for parts, stock and suppliers | Built for parts and stock tracking, not job costing or progress billing | MIT | Python | 2026-11-09 |
 | [GnuCash](https://github.com/Gnucash/gnucash) | Double-entry accounting for small businesses | No job costing at construction scale; fine for a tiny outfit only | custom | C | 2026-11-09 |
+| [OpenConstructionERP](https://github.com/datadrivenconstruction/OpenConstructionERP) | Construction ERP covering bills of quantities, take-off and cost matching | Created April 2026 with a very large feature claim: test it on your own data first; AGPL-3.0 | AGPL-3.0 | TypeScript | 2026-11-09 |
 | [Tryton](https://github.com/tryton/tryton) | Modular ERP with accounting, projects and timesheets | You build the construction layer yourself | none declared | Python | 2026-11-09 |
 
 ### Collaboration and PM

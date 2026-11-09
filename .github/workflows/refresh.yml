@@ -20,6 +20,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/refresh.py
+      - name: Regenerate the infographic
+        run: python3 scripts/make_graphics.py
       - name: Validate
         run: python3 scripts/validate.py
       - name: Commit if anything changed
