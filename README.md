@@ -257,6 +257,13 @@ That list is also a fair summary of where a small team could contribute somethin
 
 ## How to evaluate one of these properly
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/evaluate-dark.svg">
+    <img src="assets/evaluate-light.svg" alt="Five questions before an open source tool goes on a live job: whose day job is it, what the licence obliges, whether you can get your data out, what it costs to run, and who supports it" width="100%">
+  </picture>
+</p>
+
 Before you put any of it on a live job, answer these five questions:
 
 1. **Is it somebody's day job?** A project with one maintainer and no employer behind it is a project you are

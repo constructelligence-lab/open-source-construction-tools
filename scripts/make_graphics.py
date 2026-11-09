@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Regenerates the diagrams in assets/ (light and dark SVG). No dependencies: python3 scripts/make_graphics.py"""
+"""Regenerates the diagrams in assets/ (light and dark SVG). Run from anywhere: python3 scripts/make_graphics.py
+No dependencies. Diagrams that show data read it from this repository, so they cannot drift."""
 # ── svg kit: a small, dependency-free set of helpers for clean, Apple-style diagrams ─────────────────────────
 # Light and dark themes, system font stack, soft cards, Apple system colours. Every graphic is generated, so it
 # can be reproduced and, where it shows data, regenerated from that data.
@@ -250,12 +251,40 @@ def make_map(theme, entries, date):
     return c
 
 
-def _load():
+def make_evaluate(theme):
+    W, H = 1200, 470
+    c = Canvas(W, H, theme, "Five questions before an open source tool goes on a live job",
+               "Is it somebody's day job; what does the licence oblige you to do; can you get your data out; what does it cost to run; and who supports it when it breaks on a Friday.")
+    t = c.t
+    c.text(56, 84, "Before it goes on a live job", 40, 700, spacing=-0.7)
+    c.text(56, 118, "Five questions that matter more than the star count.", 18, 400, t["sub"])
+    qs = [("Is it somebody's day job?", "One maintainer and no employer behind it means you are now co-maintaining.", "blue"),
+          ("What does the licence oblige you to do?", "Read the licence file itself, not just the badge.", "indigo"),
+          ("Can you get your data out?", "Ask what the export looks like before project data goes in.", "teal"),
+          ("What does it cost to run?", "A server, a database and a GPU are commitments, not downloads.", "orange"),
+          ("Who supports it on a Friday?", "If the answer is the community, plan for the delay.", "pink")]
+    gap, y, h = 14, 160, 250
+    cw = (1088 - gap * 4) / 5
+    for i, (q, a, col) in enumerate(qs):
+        x = 56 + i * (cw + gap)
+        c.card(x, y, cw, h, 22)
+        c.text(x + 20, y + 62, str(i + 1), 44, 700, t["ink"][col], spacing=-1)
+        for j, line in enumerate(wrap(q, 17)[:3]):
+            c.text(x + 20, y + 96 + j * 22, line, 16.5, 700)
+        for j, line in enumerate(wrap(a, 22)[:5]):
+            c.text(x + 20, y + 172 + j * 19, line, 13, 400, t["sub"])
+    return c
+
+
+def _load(root):
     import json
-    d = json.loads((Path(__file__).resolve().parent.parent / "index" / "tools.json").read_text(encoding="utf-8"))
+    d = json.loads((root / "index" / "tools.json").read_text(encoding="utf-8"))
     return d["entries"], d["generated_on"]
 
 
 if __name__ == "__main__":
-    entries, date = _load()
-    build(Path(__file__).resolve().parent.parent / "assets", "tools-map", make_map, entries, date)
+    HERE = Path(__file__).resolve().parent.parent
+    out = HERE / "assets"
+    entries, date = _load(HERE)
+    build(out, "tools-map", make_map, entries, date)
+    build(out, "evaluate", make_evaluate)
